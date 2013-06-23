@@ -2,16 +2,26 @@
 "	Here there be monsters n treasure!
 "
 "	Dominique Luna -> (dluna132@gmail.com)
+"   
+"   Packages include...
 "
+"   vim-fugitive
+"   vim-git
+"   vim-surround
+"   vim-snipmate
+"   vim-addon-mw-utils
+"   nerdtree
+"   nerdtree-tabs
+"   ctrlp.vim
+"   ack.vim
+"   tlib_vim
+"   vim-repeat
 "
+"   Note that changes will occur over time
+"   based on the alignment of the stars in the sky.
 "
-"
-"
-"
-"
-"
-"
-"
+"   So if you like this setup fork it and do to it
+"   what you may!
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 

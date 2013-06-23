@@ -1,4 +1,4 @@
 vimrc
 =====
 
-vim-vim-vim vim-vim-vim vim-vi-vim-vi-vim VIM
+For easy use of vim in environments unknown.

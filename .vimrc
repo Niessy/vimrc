@@ -55,6 +55,7 @@ set background=dark
 set ofu=syntaxcomplete#Complete
 
 " Lines to the cursor, avoids flat world
+" Dont want middle age thinking here!
 set scrolloff=6
 
 " Command line height
@@ -66,6 +67,8 @@ set hidden
 " Better auto completion
 set wildmenu
 set wildmode=list:longest
+" Ignore stuff
+set wildignore+=.git,*/tmp/*,*.so,*.swp,*.zip
 
 " Search related
 set ignorecase
@@ -154,11 +157,7 @@ iabbrev tehn then
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'r'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_user_command = 'find %s -type f'
-
-" SuperTab options
-let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
 
 "Set syntaxes
 

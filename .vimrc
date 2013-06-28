@@ -119,7 +119,6 @@ map <C-l> <C-W>l
 
 " Make it easier to escape
 inoremap jj <esc>:w<cr>
-inoremap <esc> <nop>
 
 " Disable Q a.k.a the Devil
 nnoremap Q <nop> 

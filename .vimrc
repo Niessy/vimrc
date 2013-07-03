@@ -35,12 +35,11 @@ filetype plugin indent on
 
 " Set background color environment
 set background=dark
-colorscheme solarized
 
 " Solarized options
 let g:solarized_termcolors=256
 let g:solarized_visibility="high"
-let g:solarized_contrast="high"
+colorscheme solarized
 
 " Omni complete
 set ofu=syntaxcomplete#Complete

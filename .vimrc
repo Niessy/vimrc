@@ -1,27 +1,10 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "	Here there be monsters n treasure!
 "
-"	Dominique Luna -> (dluna132@gmail.com)
-"   
-"   Packages include...
-"
-"   vim-fugitive
-"   vim-git
-"   vim-surround
-"   vim-snipmate
-"   vim-addon-mw-utils
-"   nerdtree
-"   nerdtree-tabs
-"   ctrlp.vim
-"   ack.vim
-"   tlib_vim
-"   vim-repeat
-"
 "   Note that changes will occur over time
 "   based on the alignment of the stars in the sky.
 "
-"   So if you like this setup fork it and do to it
-"   what you may!
+"   So if you like this setup fork it and stuff
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -29,7 +12,7 @@ set nocompatible
 set encoding=utf-8
 
 " Manage plugins
-execute pathogen#infect('~/.vim/bundle/{}', '~/.vim/colors/{}')
+execute pathogen#infect('bundle/{}')
 
 " Manage buffers effectively
 set hidden
@@ -49,12 +32,20 @@ set title
 " to turn on yourself, or just set them all to be sure.
 syntax on
 filetype plugin indent on
+
+" Set background color environment
 set background=dark
+
+" Solarized options
+"let g:solarized_termcolors=256
+"let g:solarized_visibility="high"
+colorscheme ir_black
 
 " Omni complete
 set ofu=syntaxcomplete#Complete
 
 " Lines to the cursor, avoids flat world
+" Dont want middle age thinking here!
 set scrolloff=6
 
 " Command line height
@@ -66,6 +57,8 @@ set hidden
 " Better auto completion
 set wildmenu
 set wildmode=list:longest
+" Ignore stuff
+set wildignore+=.git,*/tmp/*,*.so,*.swp,*.zip
 
 " Search related
 set ignorecase
@@ -105,7 +98,12 @@ set mouse=a
 set splitbelow
 set splitright
 
-" Start of Mappings
+"""""""""""""""""""""""""""""""""
+"                               "
+" 		Start of Mappings       "
+"                               "
+"                               "
+"""""""""""""""""""""""""""""""""
 
 let mapleader = ","
 
@@ -125,6 +123,9 @@ nnoremap ; :
 " Remap 0 to first non blank character
 map 0 ^
 
+" Yank from cursor to end of line, to match C and D
+nnoremap Y y$
+
 " Moving between windows...the boss way
 map <C-j> <C-W>j
 map <C-k> <C-W>k
@@ -133,7 +134,6 @@ map <C-l> <C-W>l
 
 " Make it easier to escape
 inoremap jj <esc>:w<cr>
-inoremap <esc> <nop>
 
 " Disable Q a.k.a the Devil
 nnoremap Q <nop> 
@@ -154,11 +154,7 @@ iabbrev tehn then
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'r'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_user_command = 'find %s -type f'
-
-" SuperTab options
-let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
 
 "Set syntaxes
 

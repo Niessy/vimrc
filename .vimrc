@@ -12,7 +12,7 @@ set nocompatible
 set encoding=utf-8
 
 " Manage plugins
-execute pathogen#infect()
+execute pathogen#infect('bundle/{}')
 
 " Manage buffers effectively
 set hidden
@@ -37,9 +37,9 @@ filetype plugin indent on
 set background=dark
 
 " Solarized options
-let g:solarized_termcolors=256
-let g:solarized_visibility="high"
-colorscheme solarized
+"let g:solarized_termcolors=256
+"let g:solarized_visibility="high"
+colorscheme ir_black
 
 " Omni complete
 set ofu=syntaxcomplete#Complete
@@ -98,7 +98,12 @@ set mouse=a
 set splitbelow
 set splitright
 
-" Start of Mappings
+"""""""""""""""""""""""""""""""""
+"                               "
+" 		Start of Mappings       "
+"                               "
+"                               "
+"""""""""""""""""""""""""""""""""
 
 let mapleader = ","
 
@@ -117,6 +122,9 @@ nnoremap ; :
 
 " Remap 0 to first non blank character
 map 0 ^
+
+" Yank from cursor to end of line, to match C and D
+nnoremap Y y$
 
 " Moving between windows...the boss way
 map <C-j> <C-W>j

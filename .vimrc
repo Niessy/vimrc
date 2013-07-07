@@ -10,36 +10,30 @@
 
 set nocompatible
 set encoding=utf-8
+filetype plugin indent on
+syntax on 
 
 " Manage plugins
 execute pathogen#infect('bundle/{}')
 
-" Manage buffers effectively
-set hidden
+set hidden " Manage buffers effectively
 
-" Manage History
-set history=500
+set history=500 " Manage History
 
-" Show last status line
+" Status line configs
 set laststatus=2
 set statusline=%f\ -\ %n%=%l/%L
 
-" So I get a useful title
-set title
+set title " So I get a useful title
 
-" File-type highlighting and configuration.
-" Run :filetype (without args) to see what you may have
-" to turn on yourself, or just set them all to be sure.
-syntax on
-filetype plugin indent on
 
-" Set background color environment
-set background=dark
+set background=dark	" Set background color environment
 
 " Solarized options
-"let g:solarized_termcolors=256
-"let g:solarized_visibility="high"
-colorscheme ir_black
+let g:solarized_termcolors=256
+let g:solarized_visibility="high"
+
+colorscheme ir_black " Color scheme
 
 " Omni complete
 set ofu=syntaxcomplete#Complete
@@ -48,11 +42,9 @@ set ofu=syntaxcomplete#Complete
 " Dont want middle age thinking here!
 set scrolloff=6
 
-" Command line height
-set cmdheight=2
+set cmdheight=2 " Command line height
 
-" Buffer becomes hidden when abandoned
-set hidden
+set hidden " Buffer becomes hidden when abandoned
 
 " Better auto completion
 set wildmenu
@@ -74,6 +66,7 @@ set backspace=indent,eol,start
 set wrap
 set shiftwidth=4
 set tabstop=4
+set expandtab
 set smarttab
 set sr
 set autoindent
